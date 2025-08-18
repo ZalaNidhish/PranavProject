@@ -1,13 +1,17 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Hero from './Hero'
+import Ourstory from './Ourstory'
+import Marquee from './Marquee'
 
 
 function Home() {
   return (
-    <div className='h-screen w-screen bg-gradient-to-br from-red-500 via-red-950 to-black'>
+    <div className='h-screen w-screen'>
       <Navbar />
       <Hero />
+      <Marquee />
+      <Ourstory />
     </div>
   )
 }

@@ -1,90 +1,87 @@
-import React from 'react'
-import {useGSAP} from '@gsap/react'
-import gsap from 'gsap'
+import React from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Hero = () => {
+  useGSAP(() => {
+    gsap.from(".hero-title span", {
+      y: -100,
+      opacity: 0,
+      stagger: 0.05,
+      duration: 0.6,
+      delay: 1,
+    });
+    gsap.from(".welcome", {
+      opacity: 0,
+      scale:0,
+      stagger: 0.05,
+      duration: 0.6,
+      delay: 1,
+    });
+    gsap.from(".para", {
+      y: -50,
+      opacity: 0,
+      stagger: 0.05,
+      duration: 0.6,
+      delay: 3,
+    });
+    gsap.from(".button", {
+      y: -100,
+      opacity: 0,
+      stagger: 0.05,
+      duration: 0.6,
+      delay: 3,
+    });
+  });
 
-useGSAP(()=>{   
-    gsap.from('.hero-title span', {
-        y: -100,
-        opacity: 0,
-        stagger:0.05,
-        duration: 0.6,
-        delay:1      
-    })
-    gsap.from('.para', {
-        y: -50,
-        opacity: 0,
-        stagger:0.05,
-        duration: 0.6,
-        delay:3
-    })
-    gsap.from('.button', {
-        y: -100,
-        opacity: 0,
-        stagger:0.05,
-        duration: 0.6,
-        delay:3
-    })
-})
-
-return (
-    <div className='flex flex-col items-center justify-center h-[70vh] text-center text-white space-y-10 '>
-        <h1 className='hero-title text-5xl font-bold text-white leading-14'>
-            {/* T r a n s f o r m   Y o u r   S p a c e s   w i t h */}
-            <span>T</span>
-            <span>r</span>
-            <span>a</span>
-            <span>n</span>
-            <span>s</span>
-            <span>f</span>
-            <span>o</span>
-            <span>r</span>
-            <span>m</span>
-            <span> </span>
-            <span>Y</span>
-            <span>o</span>
-            <span>u</span>
-            <span>r</span>
-            <span> </span>
-            <span>S</span>
-            <span>p</span>
-            <span>a</span>
-            <span>c</span>
-            <span>e</span>
-            <span>s</span>
-            <span> </span>
-            <span>w</span>
-            <span>i</span>
-            <span>t</span>
-            <span>h</span>
-            <br />
-            {/* P i x e l P l u s   M e d i a */}
-            <span>P</span>
-            <span>i</span>
-            <span>x</span>
-            <span>e</span>
-            <span>l</span>
-            <span>P</span>
-            <span>l</span>
-            <span>u</span>
-            <span>s</span>
-            <span> </span>
-            <span>M</span>
-            <span>e</span>
-            <span>d</span>
-            <span>i</span>
-            <span>a</span>
-            <span>.</span>
+  return (
+    <div className="flex flex-col items-center justify-center h-[100vh] text-center text-white bg-gradient-to-b from-red-500 via-red-950 to-black">
+      <div className="h-[80vh] flex flex-col pt-20 items-center justify-center text-center space-y-6">
+        <h3 className="welcome border-gray-500 border-1 p-2 rounded-2xl">
+          Welcome to PIXEL PLUS MEDIA
+        </h3>
+        <h1 className="hero-title text-4xl w-[80vw] font-bold text-white leading-14">
+          {/* Guaranteed 75-100 Solar Appointments In the Next 90 Days With our AI Hybrid Appointment System */}
+          <span className="text-red-500">Guaranteed</span>
+          <span> </span>
+          <span>75-100</span>
+          <span> </span>
+          <span>Solar</span>
+          <span> </span>
+          <span>Appointments</span>
+          <span> </span>
+          <span className="text-red-500">In</span>
+          <span> </span>
+          <span className="text-red-500">the</span>
+          <span> </span>
+          <span className="text-red-500">Next</span>
+          <span> </span>
+          <span className="text-red-500">90</span>
+          <span> </span>
+          <span className="text-red-500">Days</span>
+          <span> </span>
+          <span className="text-red-500">With</span>
+          <span> </span>
+          <span className="text-red-500">our</span>
+          <span> </span>
+          <span>AI</span>
+          <span> </span>
+          <span>Hybrid</span>
+          <span> </span>
+          <span>Appointment</span>
+          <span> </span>
+          <span>System</span>
         </h1>
-        <p className='para text-lg text-gray-200 max-w-2xl'>
-            Elevate your brand with stunning, durable epoxy flooring solutions and expert digital marketing to showcase your projects.
+        <p className="para text-[16px] text-gray-400 max-w-2xl">
+          An amalgamated approach where we use AI Agents, Call centre, FB Ads,
+          Human Agents & an AI Backed CRM.
         </p>
-        <button className='button bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 cursor-pointer'>
-            Book a Free Consultation
+        <button className="button bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 cursor-pointer">
+          Book a Free Consultation
         </button>
+      </div>
     </div>
-)
-}
+  );
+};
 
-export default Hero
+export default Hero;
