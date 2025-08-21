@@ -56,7 +56,7 @@ useGSAP(() => {
         Why Choose Us
       </h1>
       <h1 className="text-5xl font-semibold text-white">
-        Why Choose Our Solar Lead Services?
+        Why Choose Our epoxy flooring leads?
       </h1>
       <p className="text-1xl text-neutral-400 text-center px-4 py-2 max-w-4xl font-semibold">
         Through sharp insight, we’ve uncovered a game-changing truth: the
