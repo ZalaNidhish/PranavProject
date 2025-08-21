@@ -35,7 +35,7 @@ const Ourstory = () => {
       <div className="h-screen w-3/5 flex flex-col justify-center space-y-10">
         <span className="overflow-hidden">
           <h2 className="OurStoryText text-neutral-400">
-            At Growth Magnet Studio, we specialise in generating targeted and
+            At PIXEL PLUS MEDIA, we specialise in generating targeted and
             qualified leads and appointments based on your needs.
           </h2>
         </span>
