@@ -51,11 +51,11 @@ useGSAP(() => {
 
 
   return (
-    <div className="w-screen bg-black flex flex-col items-center justify-center gap-8 p-4">
-      <h1 className="text-1xl font-bold text-center text-white py-2 px-4 ring-neutral-800 rounded-2xl ring-2 inline">
+    <div className="w-screen bg-black flex flex-col items-center justify-center gap-4 md:gap-8 p-4">
+      <h1 className="text-1xl font-bold text-center text-white py-2 px-4  ring-neutral-600 md:ring-neutral-800 rounded-2xl ring-2 inline">
         Why Choose Us
       </h1>
-      <h1 className="text-5xl font-semibold text-white">
+      <h1 className="text-2xl md:text-5xl font-semibold text-white text-center mt-6 md:mt-0">
         Why Choose Our Epoxy flooring leads?
       </h1>
       <p className="text-1xl text-neutral-400 text-center px-4 py-2 max-w-4xl font-semibold">
@@ -67,7 +67,7 @@ useGSAP(() => {
       </p>
       <div className="flex flex-wrap items-center justify-center gap-4">
         {Array.map((item, index) => (
-            <div key={index} className="cards  bg-neutral-950 hover:bg-neutral-900 cursor-pointer p-6 rounded-lg shadow-md w-80 h-70 flex flex-col items-center justify-center gap-4">
+            <div key={index} className="cards bg-neutral-800 md:bg-neutral-950 hover:bg-neutral-900 cursor-pointer p-6 rounded-lg shadow-md w-80 h-70 flex flex-col items-center justify-center gap-4">
               {/* <img src={item.img} alt={item.title} className="w-full h-32 object-cover rounded-md mb-2" /> */}
               <h2 className="text-xl font-semibold mb-1 text-white">{item.title}</h2>
               <p className="text-neutral-300">{item.content}</p>

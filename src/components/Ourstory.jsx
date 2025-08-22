@@ -3,6 +3,8 @@ import employee from "../assets/employee.avif";
 import mylogo from "../assets/mylogo.jpg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { Link } from "react-router-dom";
+
 import gsap from "gsap";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -59,9 +61,11 @@ const Ourstory = () => {
           </p>
         </span>
         <span className="overflow-hidden">
+          <Link to="/calendly">
           <button className="OurStoryText bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 cursor-pointer w-50">
             Schedule a Call
           </button>
+          </Link>
         </span>
       </div>
       <div className="h-screen w-1/5">

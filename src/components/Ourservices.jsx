@@ -21,7 +21,7 @@ const ShinyCard = ({ title, text }) => {
     <div
       ref={cardRef}
       onMouseMove={handleMouseMove}
-      className="relative card w-[35vw] h-[45vh] bg-neutral-950 p-5 rounded-lg shadow-lg flex flex-col items-center justify-center gap-6 overflow-hidden"
+      className="relative card w-[80vw] md:w-[40vw] md:h-[45vh] bg-neutral-800 md:bg-neutral-950 p-5 rounded-lg shadow-lg flex flex-col items-center justify-center gap-6 overflow-hidden"
       style={{
         "--x": "50%",
         "--y": "50%",
@@ -29,7 +29,7 @@ const ShinyCard = ({ title, text }) => {
     >
       {/* Shine overlay */}
       <div
-        className="absolute inset-0 pointer-events-none cursor-pointer"
+        className="absolute hidden md:flex inset-0 pointer-events-none cursor-pointer"
         style={{
           background:
             "radial-gradient(circle at var(--x) var(--y), rgba(255,255,255,0.12), transparent 70%)",
@@ -59,11 +59,11 @@ const Ourservices = () => {
   })
 
   return (
-    <div className="h-screen w-screen bg-black flex items-center justify-center flex-col gap-10 p-5">
+    <div className="h-screen w-screen bg-black flex items-center justify-center flex-col gap-0 md:gap-10 p-5">
       <h1 className="text-1xl font-bold text-center text-white py-2 px-4 ring-neutral-800 rounded-2xl ring-2">
         Our Services
       </h1>
-      <div className="Services flex items-center justify-center gap-10 mt-10 overflow-hidden ">
+      <div className="Services flex flex-col md:flex-row items-center justify-center gap-10 mt-10 overflow-hidden ">
         <ShinyCard
           title="Fueling Your Growth with AI-Powered Leads"
           text="At Pixel Plus Media, we don’t just run ads — we engineer predictable
