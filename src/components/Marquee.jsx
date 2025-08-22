@@ -1,8 +1,4 @@
 import React from 'react'
-import zapier from '../assets/zapier.png'
-import twilio from '../assets/twilio.png'
-import HIGHLEVEL from '../assets/HIGHLEVEL.png'
-import IILEVEN_LABS from '../assets/IILEVEN_LABS.jpg'
 
 const Marquee = () => {
   return (

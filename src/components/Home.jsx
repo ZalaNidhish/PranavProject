@@ -13,7 +13,7 @@ function Home() {
     <div className='h-screen w-screen'>
       <Navbar />
       <Hero />
-      <Marquee />
+      {/* <Marquee /> */}
       <Ourstory />
       <Ourservices />
       <Whychooseus />

@@ -46,7 +46,7 @@ const Ourservices = () => {
   useGSAP(()=>{
     gsap.from('.Services', {
       y: 150,
-      opacity: 1,
+      opacity: 0,
       duration: 0.6,
       delay: 0,
       scrollTrigger: {

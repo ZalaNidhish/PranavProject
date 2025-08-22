@@ -1,5 +1,4 @@
 import React from "react";
-import employee from "../assets/employee.avif";
 import mylogo from "../assets/mylogo.jpg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -34,8 +33,8 @@ const Ourstory = () => {
   });
 
   return (
-    <div className="flex items-center justify-center h-screen w-full bg-black text-white p-6 gap-30">
-      <div className="h-screen w-3/5 flex flex-col justify-center space-y-10">
+    <div className="flex flex-col md:flex-row items-center justify-center w-full text-white md:p-6 gap-0 md:gap-20 bg-black">
+      <div className="h-screen w-6/7 md:w-3/5 flex flex-col justify-center space-y-10 ">
         <span className="overflow-hidden">
           <h2 className="OurStoryText text-neutral-400">
             At PIXEL PLUS MEDIA, we specialise in generating targeted and
@@ -60,7 +59,7 @@ const Ourstory = () => {
             </span>
           </p>
         </span>
-        <span className="overflow-hidden">
+        <span className="overflow-hidden text-center md:text-start">
           <Link to="/calendly">
           <button className="OurStoryText bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 cursor-pointer w-50">
             Schedule a Call
@@ -68,7 +67,7 @@ const Ourstory = () => {
           </Link>
         </span>
       </div>
-      <div className="h-screen w-1/5">
+      <div className="h-[20vh] md:h-screen md:w-1/5 w-3/5 ">
         <img
           src={mylogo}
           alt=""
