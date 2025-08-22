@@ -1,5 +1,6 @@
 import React from "react";
 import employee from "../assets/employee.avif";
+import mylogo from "../assets/mylogo.jpg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -65,7 +66,7 @@ const Ourstory = () => {
       </div>
       <div className="h-screen w-1/5">
         <img
-          src={employee}
+          src={mylogo}
           alt=""
           className="employee h-full w-full object-contain"
         />
