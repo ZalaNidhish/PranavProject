@@ -37,7 +37,7 @@ const Hero = () => {
   return (
     <div className="flex flex-col items-center justify-center h-[80vh] md:h-[100vh] text-center text-white bg-gradient-to-b from-red-500 to-black">
       <div className="h-[80vh] flex flex-col pt-20 items-center justify-center text-center space-y-6 gap-4">
-        <h3 className="welcome border-gray-500/60 md:border-gray-500/30 border-2 p-2 rounded-2xl">
+        <h3 className="welcome border-neutral-600/80 md:border-neutral-600/80 border-2 p-2 rounded-2xl">
           Welcome to PIXEL PLUS MEDIA
         </h3>
         <h1 className="hero-title text-3xl md:text-4xl w-[80vw] font-bold text-white leading-10 md:leading-14">

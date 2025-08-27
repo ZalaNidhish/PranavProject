@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <div className='navbar absolute w-screen h-30 flex items-center justify-center '>
-      <div className='rounded-2xl text-white px-8 py-3 flex gap-2 md:gap-8 bg-black w-[80vw] items-center justify-between'>
+      <div className='rounded-2xl text-white px-6 py-3 flex gap-0 md:gap-8 bg-black w-[80vw] items-center justify-between'>
         <div className='h-14 w-14'><img src={LOGO} alt="lOGO" className='h-full w-full object-contain' /></div>
         <a href="#home">
         <h1 className='text-[14px] hidden p-1 md:flex items-center cursor-pointer hover:underline hover:scale ease-in-out duration-200'>Home</h1>
