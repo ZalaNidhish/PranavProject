@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/mylogocrop.jpg'
+import LOGO from '../assets/LOGO.jpg'
 import {useGSAP} from '@gsap/react'
 import gsap from 'gsap'
 import { Link } from "react-router-dom";
@@ -21,9 +21,9 @@ const Navbar = () => {
 
   return (
     <div className='navbar absolute w-screen h-30 flex items-center justify-center '>
-      <div className='rounded-2xl text-white px-8 py-3 flex gap-8 bg-black border-[2px] border-neutral-800 w-[80vw] items-center justify-between'>
-        <h1 className='text-[14px] p-1 h-10 w-10'><img src={logo} alt="lOGO" className='h-full w-full object-contain' /></h1>
-          <a href="#home">
+      <div className='rounded-2xl text-white px-8 py-3 flex gap-2 md:gap-8 bg-black w-[80vw] items-center justify-between'>
+        <div className='h-14 w-14'><img src={LOGO} alt="lOGO" className='h-full w-full object-contain' /></div>
+        <a href="#home">
         <h1 className='text-[14px] hidden p-1 md:flex items-center cursor-pointer hover:underline hover:scale ease-in-out duration-200'>Home</h1>
         </a>
         <a href="#ourstory">

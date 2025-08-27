@@ -11,14 +11,20 @@ const Footer = () => {
       <div className="flex items-center justify-evenly gap-6"> 
         <div className="h-full">
           <p className="flex">
-            <span className="w-fit cursor-pointer"><img src={instagram} alt="" className="h-7 w-7 object-cover mx-2 my-4"/></span>
+            <a href="https://www.instagram.com/pixelplusmedia.co/?hl=en">
+              <span className="w-fit cursor-pointer"><img src={instagram} alt="" className="h-7 w-7 object-cover mx-2 my-4"/></span>
+            </a>
+            {/* <a href="">
             <span className="w-fit cursor-pointer"><img src={facebook} alt="" className="h-7 w-7 object-cover mx-2 my-4"/></span>
-            <span className="w-fit cursor-pointer"><img src={linkdin} alt="" className="h-7 w-7 object-cover mx-2 my-4"/></span>
+            </a> */}
+            <a href="https://www.linkedin.com/in/pranav-pandya-621692380/">
+              <span className="w-fit cursor-pointer"><img src={linkdin} alt="" className="h-7 w-7 object-cover mx-2 my-4"/></span>
+            </a>
           </p>
         </div>
       </div>
       <div className="w-full text-center text-neutral-600 font-semibold">
-        Crafted with spice & code by <span className="text-red-800">Nidhish </span>
+        <span className="text-red-800">PIXEL PLUS MEDIA </span>
         | Copyright and Rights Reserved
       </div>
     </div>
