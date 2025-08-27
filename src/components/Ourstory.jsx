@@ -1,5 +1,5 @@
 import React from "react";
-import LOGO from "../assets/LOGO.jpg";
+import logo from "../assets/logo.jpg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { Link } from "react-router-dom";
@@ -69,7 +69,7 @@ const Ourstory = () => {
       </div>
       <div className="h-[20vh] md:h-screen md:w-1/5 w-3/5 ">
         <img
-          src={LOGO}
+          src={logo}
           alt=""
           className="employee h-full w-full object-contain"
         />
